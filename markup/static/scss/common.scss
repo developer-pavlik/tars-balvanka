@@ -6,37 +6,9 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 50%;
-    font-family: $font-1;
-
-    @include below(374px) {
-        font-size: 45%;
-    }
-
-    @include above(640px) {
-        font-size: 60%;
-    }
-}
-
 html, body {
     height: 100%;
 }
 
-.page {
-    font-size: 2em;
 
-    @include above(640/16+em) {
-        font-size: 1em;
-    }
-}
-
-.page__wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
-}
-
-.page__buffer {
-    height: 50px;
-}
 
