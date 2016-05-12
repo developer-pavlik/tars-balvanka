@@ -1,0 +1,5 @@
+head: {
+    defaults: {
+        useSocialMetaTags: true
+    }
+}

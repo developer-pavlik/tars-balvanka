@@ -1,16 +1,8 @@
 extends ../modules/layouts/default
 
-include ../modules/filters/filters
-include ../modules/slide-panel/slide-panel
-
 block head
-    - var pageTitle = 'Статьи';
+    - var pageTitle = 'Верстка';
 
 block content
-
-    .container
-        +b.UL.pages-list
-            each page in __pages
-                +e.item
-                    +e.link(href=page.href)= page.name
+    .content Основной контент сайта
 

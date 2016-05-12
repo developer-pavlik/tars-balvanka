@@ -1,0 +1,29 @@
+include ../../../node_modules/bemto.jade/bemto
+include ../head/head
+include ../header/header
+include ../footer/footer
+
+- var jv0 = 'javascript:void(0)';
+
+doctype html
+html(lang='ru')
+    head
+        block head
+
+        +head(head.defaults)
+
+    +b.BODY.page(class=(pageClass +'__' || ''))
+        |%=symbols=%
+
+        +header()
+
+        main.main
+            block content
+
+        +footer()
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')
